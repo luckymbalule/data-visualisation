@@ -8,7 +8,7 @@ from die import Die
 
 BASE_DIR = Path(__file__).parent.parent.parent
 OUTPUT_DIR = BASE_DIR / "outputs" / "die"
-# parents arg to true to avoid throwing errors if "outputs" does not exist
+# parents arg to true - create "/outputs/" if it does not exist
 OUTPUT_DIR.mkdir(exist_ok=True, parents=True)
 
 
